@@ -71,6 +71,7 @@
   padding-bottom: 10px;
 }
 
-#feed-menu:hover{
-  color: blue;
+#feed-menu:active{
+  color: white;
+  background-color: blue;
 }
