@@ -70,3 +70,7 @@
   margin: 10px;
   padding-bottom: 10px;
 }
+
+#feed-menu:hover{
+  color: blue;
+}
