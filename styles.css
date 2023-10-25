@@ -1,27 +1,12 @@
-.modal-buttons {
-  padding-top: 10px;
-}
-
-.feed-buttons {
-  margin: auto;
-  width: 50%;
-  padding: 10px;
-  text-align: center;
-}
-
 .navbar-icons {
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
   border-radius: 5px;
   max-height: 38px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
-}
-
-.navbar-instagram {
-  gap: 5px;
 }
 
 #container {
@@ -38,40 +23,13 @@
   -o-border-radius: 5px;
 }
 
-#photo {
-  width: 100%;
-}
-
-#photo-grid {
-  width: 100%;
-  padding-top: 20px;
-}
-
-#post {
-  font-weight: bolder;
-}
-
-#post-title {
-  margin-left: 10px;
-}
-
 #post-number {
   padding-top: 10px;
   margin-left: 655px;
   font-weight: 400;
 }
 
-#description {
-  margin: 10px;
-  padding-bottom: 10px;
-}
-
-#likes {
-  margin: 10px;
-  padding-bottom: 10px;
-}
-
-#feed-menu:focus{
+#feed-menu:focus {
   color: blue;
   border: 0;
 }

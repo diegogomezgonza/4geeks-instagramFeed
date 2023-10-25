@@ -20,12 +20,9 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg bg-light">
       <div class="container">
-        <a
-          class="navbar-brand d-flex align-items-center navbar-instagram"
-          href="#"
-        >
+        <a class="navbar-brand d-flex align-items-center gap-2" href="#">
           <i class="fa-brands fa-instagram mr-1"></i>
-          <span><strong>Instagram</strong></span>
+          <span class="font-weight-bold pb-1">Instagram</span>
         </a>
         <button
           class="navbar-toggler"
@@ -64,7 +61,10 @@
                 aria-expanded="false"
               >
                 <div>
-                  <i class="fa-solid fa-gear" style="color: white"></i>
+                  <i
+                    class="fa-solid fa-gear"
+                    style="color: white; padding-right: 10px"
+                  ></i>
                   <i class="fa-solid fa-caret-down" style="color: white"></i>
                 </div>
               </a>
@@ -72,11 +72,17 @@
                 class="dropdown-menu"
                 aria-labelledby="navbarDropdownMenuLink"
               >
-                <a class="dropdown-item" href="#">Profile</a>
-                <a class="dropdown-item" href="#">Accesibility</a>
-                <a class="dropdown-item" href="#">Privacy and data</a>
+                <a class="dropdown-item" href="#"><strong>Profile</strong></a>
+                <a class="dropdown-item" href="#"
+                  ><strong>Accesibility</strong></a
+                >
+                <a class="dropdown-item" href="#"
+                  ><strong>Privacy and data</strong></a
+                >
                 <hr />
-                <a class="dropdown-item text-danger" href="#">Logout</a>
+                <a class="dropdown-item text-danger" href="#"
+                  ><strong>Logout</strong></a
+                >
               </div>
             </li>
           </ul>
@@ -86,7 +92,7 @@
 
     <!-- Feed buttons -->
 
-    <div class="feed-buttons">
+    <div class="m-auto w-50 p-1 pb-4 text-center">
       <button id="feed-menu" onclick="gallery()" class="btn border=0 feed-grid">
         <i id="feed-menu" class="fa-solid fa-table-cells"></i>
       </button>
@@ -98,14 +104,14 @@
     <!-- Feed scroll -->
     <div id="scroll">
       <div id="container">
-        <div id="post">
+        <div>
           <h6 id="post-number">8/26</h6>
-          <h4 id="post-title">My crazy dog Spark!</h4>
+          <h4 class="ms-2">My crazy dog Spark!</h4>
         </div>
-        <div><img id="photo" src="pics/dog.PNG" alt="" /></div>
+        <div><img class="w-100" src="pics/dog.PNG" alt="" /></div>
         <div>
-          <p id="likes"><strong>32452 Likes</strong></p>
-          <p id="description">
+          <p class="m-2 pb-2"><strong>32452 Likes</strong></p>
+          <p class="m-2 pb-3">
             This is an example of a very good photo that you can post on
             instagram.
           </p>
@@ -113,14 +119,14 @@
       </div>
 
       <div id="container">
-        <div id="post">
+        <div>
           <h6 id="post-number">4/9</h6>
-          <h4 id="post-title">The greatness of Croatia</h4>
+          <h4 class="ms-2">The greatness of Croatia</h4>
         </div>
-        <div><img id="photo" src="pics/croatia.PNG" alt="" /></div>
+        <div><img class="w-100" src="pics/croatia.PNG" alt="" /></div>
         <div>
-          <p id="likes"><strong>6764 Likes</strong></p>
-          <p id="description">
+          <p class="m-2 pb-2"><strong>6764 Likes</strong></p>
+          <p class="m-2 pb-3">
             This is an example of a very good photo that you can post on
             instagram.
           </p>
@@ -128,14 +134,14 @@
       </div>
 
       <div id="container">
-        <div id="post">
-          <h6 id="post-number">6/10</h6>
-          <h4 id="post-title">Amazing goal by Cristiano!</h4>
-        </div>
-        <div><img id="photo" src="pics/cristiano2.PNG" alt="" /></div>
         <div>
-          <p id="likes"><strong>2342 Likes</strong></p>
-          <p id="description">
+          <h6 id="post-number">6/10</h6>
+          <h4 class="ms-2">Amazing goal by Cristiano!</h4>
+        </div>
+        <div><img class="w-100" src="pics/cristiano2.PNG" alt="" /></div>
+        <div>
+          <p class="m-2 pb-2"><strong>2342 Likes</strong></p>
+          <p class="m-2 pb-3">
             This is an example of a very good photo that you can post on
             instagram.
           </p>
@@ -158,24 +164,24 @@
       </div>
       <div class="row">
         <div class="col">
-          <div><img id="photo-grid" src="pics/woman.PNG" alt="" /></div>
+          <div><img class="w-100 pt-4" src="pics/woman.PNG" alt="" /></div>
         </div>
         <div class="col">
-          <img id="photo-grid" src="pics/paris.PNG" alt="" />
+          <img class="w-100 pt-4" src="pics/paris.PNG" alt="" />
         </div>
         <div class="col">
-          <img id="photo-grid" src="pics/cristiano1.PNG" alt="" />
+          <img class="w-100 pt-4" src="pics/cristiano1.PNG" alt="" />
         </div>
       </div>
       <div class="row">
         <div class="col">
-          <div><img id="photo-grid" src="pics/family.PNG" alt="" /></div>
+          <div><img class="w-100 pt-4" src="pics/family.PNG" alt="" /></div>
         </div>
         <div class="col">
-          <img id="photo-grid" src="pics/program.PNG" alt="" />
+          <img class="w-100 pt-4" src="pics/program.PNG" alt="" />
         </div>
         <div class="col">
-          <img id="photo-grid" src="pics/students.PNG" alt="" />
+          <img class="w-100 pt-4" src="pics/students.PNG" alt="" />
         </div>
       </div>
     </div>
@@ -206,7 +212,7 @@
 strongAdd the caption of your post here</textarea
               >
             </div>
-            <div class="modal-buttons">
+            <div class="pt-3">
               <button class="btn btn-white border border-dark">
                 <i class="fa-solid fa-camera"></i>
               </button>
