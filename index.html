@@ -20,9 +20,12 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg bg-light">
       <div class="container">
-        <a class="navbar-brand d-flex align-items-center" href="#">
+        <a
+          class="navbar-brand d-flex align-items-center navbar-instagram"
+          href="#"
+        >
           <i class="fa-brands fa-instagram mr-1"></i>
-          <span>Instagram</span>
+          <span><strong>Instagram</strong></span>
         </a>
         <button
           class="navbar-toggler"
@@ -51,17 +54,19 @@
                 </button>
               </a>
             </li>
-            <li class="nav-item dropdown bg-secondary">
+            <li class="nav-item dropdown bg-secondary navbar-icons">
               <a
-                class="nav-link dropdown-toggle text-secondary"
+                class="nav-link text-secondary"
                 href="#"
                 id="navbarDropdownMenuLink"
                 data-toggle="dropdown"
                 aria-haspopup="true"
                 aria-expanded="false"
               >
-                <i class="fa-solid fa-gear" style="color: white"></i>
-                <i class="fa-solid fa-caret-down" style="color: white"></i>
+                <div>
+                  <i class="fa-solid fa-gear" style="color: white"></i>
+                  <i class="fa-solid fa-caret-down" style="color: white"></i>
+                </div>
               </a>
               <div
                 class="dropdown-menu"
@@ -82,16 +87,13 @@
     <!-- Feed buttons -->
 
     <div class="feed-buttons">
-      <button onclick="gallery()" class="btn border=0">
+      <button onclick="gallery()" class="btn border=0 feed-grid">
         <i class="fa-solid fa-table-cells"></i>
       </button>
       <button onclick="feed()" class="btn border=0">
         <i class="fa-solid fa-square"></i>
       </button>
     </div>
-
-    <!-- Feed gallery -->
-    <div id="myDIV">Esto es gallery.</div>
 
     <!-- Feed scroll -->
     <div id="scroll">
@@ -137,6 +139,43 @@
             This is an example of a very good photo that you can post on
             instagram.
           </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Feed grid -->
+    <div id="grid" class="container">
+      <div class="row">
+        <div class="col">
+          <div><img id="photo-grid" src="pics/dog.PNG" alt="" /></div>
+        </div>
+        <div class="col">
+          <img id="photo-grid" src="pics/people.PNG" alt="" />
+        </div>
+        <div class="col">
+          <img id="photo-grid" src="pics/croatia.PNG" alt="" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div><img id="photo-grid" src="pics/woman.PNG" alt="" /></div>
+        </div>
+        <div class="col">
+          <img id="photo-grid" src="pics/paris.PNG" alt="" />
+        </div>
+        <div class="col">
+          <img id="photo-grid" src="pics/cristiano1.PNG" alt="" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div><img id="photo-grid" src="pics/family.PNG" alt="" /></div>
+        </div>
+        <div class="col">
+          <img id="photo-grid" src="pics/programming.PNG" alt="" />
+        </div>
+        <div class="col">
+          <img id="photo-grid" src="pics/students.PNG" alt="" />
         </div>
       </div>
     </div>
@@ -210,7 +249,7 @@ Add the caption of your post here</textarea
     <!-- Funciones feed -->
     <script>
       function gallery() {
-        var x = document.getElementById("myDIV");
+        var x = document.getElementById("grid");
         if (x.style.display === "none") {
           x.style.display = "block";
         } else {
