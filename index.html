@@ -256,18 +256,21 @@ Add the caption of your post here</textarea
     <script>
       function gallery() {
         var x = document.getElementById("grid");
+        var y = document.getElementById("scroll");
         if (x.style.display === "none") {
           x.style.display = "block";
+          y.style.display = "none"; // hide the scroll content
         } else {
           x.style.display = "none";
         }
       }
-    </script>
-    <script>
+
       function feed() {
         var x = document.getElementById("scroll");
+        var y = document.getElementById("grid");
         if (x.style.display === "none") {
           x.style.display = "block";
+          y.style.display = "none"; // hide the grid content
         } else {
           x.style.display = "none";
         }
