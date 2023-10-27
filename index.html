@@ -111,7 +111,9 @@
       >
         <div class="d-flex flex-row pt-4">
           <div class="col-10"><h4 class="ms-2 h1">My crazy dog Spark!</h4></div>
-          <div class="col-2 ms-5"><h6 class="pt-2 ms-5 font-weight-bold">8/26</h6></div>
+          <div class="col-2 ms-5">
+            <h6 class="pt-2 ms-5 font-weight-bold">8/26</h6>
+          </div>
         </div>
         <div><img class="w-100" src="pics/dog.PNG" alt="" /></div>
         <div>
@@ -128,8 +130,12 @@
         class="m-auto mb-2 w-50 bg-white rounded border border-dark"
       >
         <div class="d-flex flex-row pt-4">
-          <div class="col-10"><h4 class="ms-2 h1">The greatness of Croatia</h4></div>
-          <div class="col-2 ms-5"><h6 class="pt-2 ms-5 font-weight-bold">4/9</h6></div>
+          <div class="col-10">
+            <h4 class="ms-2 h1">The greatness of Croatia</h4>
+          </div>
+          <div class="col-2 ms-5">
+            <h6 class="pt-2 ms-5 font-weight-bold">4/9</h6>
+          </div>
         </div>
         <div><img class="w-100" src="pics/croatia.png" alt="" /></div>
         <div>
@@ -146,8 +152,12 @@
         class="m-auto mb-2 w-50 bg-white rounded border border-dark"
       >
         <div class="d-flex flex-row pt-4">
-          <div class="col-10"><h4 class="ms-2 h1">Amazing goal by Cristiano!</h4></div>
-          <div class="col-2 ms-5"><h6 class="pt-2 ms-5 font-weight-bold">6/10</h6></div>
+          <div class="col-10">
+            <h4 class="ms-2 h1">Amazing goal by Cristiano!</h4>
+          </div>
+          <div class="col-2 ms-5">
+            <h6 class="pt-2 ms-5 font-weight-bold">6/10</h6>
+          </div>
         </div>
         <div><img class="w-100" src="pics/cristiano2.PNG" alt="" /></div>
         <div>
@@ -265,10 +275,17 @@ Add the caption of your post here</textarea
 
     <!-- Funciones feed -->
     <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var scroll = document.getElementById("scroll");
+        var grid = document.getElementById("grid");
+        scroll.style.display = "none";
+        grid.style.display = "none";
+      });
+
       function gallery() {
         var x = document.getElementById("grid");
         var y = document.getElementById("scroll");
-        if (x.style.display === "none") {
+        if (x.style.display === "" || x.style.display === "none") {
           x.style.display = "block";
           y.style.display = "none"; // hide the scroll content
         } else {
@@ -279,7 +296,7 @@ Add the caption of your post here</textarea
       function feed() {
         var x = document.getElementById("scroll");
         var y = document.getElementById("grid");
-        if (x.style.display === "none") {
+        if (x.style.display === "" || x.style.display === "none") {
           x.style.display = "block";
           y.style.display = "none"; // hide the grid content
         } else {

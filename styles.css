@@ -3,4 +3,7 @@
   border: 0;
 }
 
-
+#scroll,
+#grid {
+  display: none;
+}
