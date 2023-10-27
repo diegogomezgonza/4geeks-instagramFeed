@@ -1,9 +1,12 @@
-#feed-menu:focus {
-  color: blue;
-  border: 0;
-}
-
 #scroll,
 #grid {
   display: none;
+}
+
+.nav-link{
+  color: gray !important
+}
+
+.nav-link:focus{
+  color: blue !important
 }
