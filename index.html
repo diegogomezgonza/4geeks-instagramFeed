@@ -92,119 +92,45 @@
     </nav>
 
     <!-- Feed buttons -->
-    <div class="d-flex align-items-center justify-content-center">
-      <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-        <li class="nav-item">
-          <a
-            class="nav-link bg-transparent"
-            id="grid-tab"
-            data-toggle="pill"
-            href="#grid-inst"
-            role="tab"
-            aria-controls="grid"
-            aria-selected="true"
-          >
-            <i id="feed-menu" class="fa-solid fa-table-cells"></i
-          ></a>
-        </li>
-        <li class="nav-item">
-          <a
-            class="nav-link bg-transparent"
-            id="scroll-tab"
-            data-toggle="pill"
-            href="#scroll-home"
-            role="tab"
-            aria-controls="scroll"
-            aria-selected="false"
-            ><i id="feed-menu" class="fa-solid fa-square"></i
-          ></a>
-        </li>
-      </ul>
+    <div
+      class="nav nav-pills d-flex align-items-center justify-content-center bg-transparent"
+      id="nav-tab"
+      role="tablist"
+    >
+      <button
+        class="nav-link active bg-transparent"
+        id="nav-home-tab"
+        data-bs-toggle="tab"
+        data-bs-target="#nav-home"
+        type="button"
+        role="tab"
+        aria-controls="nav-home"
+        aria-selected="true"
+      >
+        <i class="fa-solid fa-table-cells"></i>
+      </button>
+      <button
+        class="nav-link bg-transparent"
+        id="nav-profile-tab"
+        data-bs-toggle="tab"
+        data-bs-target="#nav-profile"
+        type="button"
+        role="tab"
+        aria-controls="nav-profile"
+        aria-selected="false"
+      >
+        <i class="fa-solid fa-square"></i>
+      </button>
     </div>
 
-    <div class="tab-content" id="pills-tabContent">
-      <!-- Scroll -->
+    <div class="tab-content" id="nav-tabContent">
       <div
         class="tab-pane fade show active"
-        id="scroll-home"
+        id="nav-home"
         role="tabpanel"
-        aria-labelledby="scroll-tab"
+        aria-labelledby="nav-home-tab"
       >
-        <div>
-          <div
-            id="container"
-            class="m-auto mb-2 w-50 bg-white rounded border border-dark"
-          >
-            <div class="d-flex flex-row pt-4">
-              <div class="col-10">
-                <h4 class="ms-2 h1">My crazy dog Spark!</h4>
-              </div>
-              <div class="col-2 ms-5">
-                <h6 class="pt-2 ms-5 font-weight-bold">8/26</h6>
-              </div>
-            </div>
-            <div><img class="w-100" src="pics/dog.PNG" alt="" /></div>
-            <div>
-              <p class="m-2 pb-2"><strong>32452 Likes</strong></p>
-              <p class="m-2 pb-3">
-                This is an example of a very good photo that you can post on
-                instagram.
-              </p>
-            </div>
-          </div>
-
-          <div
-            id="container"
-            class="m-auto mb-2 w-50 bg-white rounded border border-dark"
-          >
-            <div class="d-flex flex-row pt-4">
-              <div class="col-10">
-                <h4 class="ms-2 h1">The greatness of Croatia</h4>
-              </div>
-              <div class="col-2 ms-5">
-                <h6 class="pt-2 ms-5 font-weight-bold">4/9</h6>
-              </div>
-            </div>
-            <div><img class="w-100" src="pics/croatia.png" alt="" /></div>
-            <div>
-              <p class="m-2 pb-2"><strong>32452 Likes</strong></p>
-              <p class="m-2 pb-3">
-                This is an example of a very good photo that you can post on
-                instagram.
-              </p>
-            </div>
-          </div>
-
-          <div
-            id="container"
-            class="m-auto mb-2 w-50 bg-white rounded border border-dark"
-          >
-            <div class="d-flex flex-row pt-4">
-              <div class="col-10">
-                <h4 class="ms-2 h1">Amazing goal by Cristiano!</h4>
-              </div>
-              <div class="col-2 ms-5">
-                <h6 class="pt-2 ms-5 font-weight-bold">6/10</h6>
-              </div>
-            </div>
-            <div><img class="w-100" src="pics/cristiano2.PNG" alt="" /></div>
-            <div>
-              <p class="m-2 pb-2"><strong>32452 Likes</strong></p>
-              <p class="m-2 pb-3">
-                This is an example of a very good photo that you can post on
-                instagram.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Grid -->
-      <div
-        class="tab-pane fade"
-        id="grid-inst"
-        role="tabpanel"
-        aria-labelledby="grid-tab"
-      >
+        <!-- Grid -->
         <div class="container">
           <div class="row g-4">
             <div class="col">
@@ -277,7 +203,84 @@
           </div>
         </div>
       </div>
+      <div
+        class="tab-pane fade"
+        id="nav-profile"
+        role="tabpanel"
+        aria-labelledby="nav-profile-tab"
+      >
+        <!-- Scroll -->
+        <div>
+          <div
+            id="container"
+            class="m-auto mb-2 w-50 bg-white rounded border border-dark"
+          >
+            <div class="d-flex flex-row pt-4">
+              <div class="col-10">
+                <h4 class="ms-2 h1">My crazy dog Spark!</h4>
+              </div>
+              <div class="col-2 ms-5">
+                <h6 class="pt-2 ms-5 font-weight-bold">8/26</h6>
+              </div>
+            </div>
+            <div><img class="w-100" src="pics/dog.PNG" alt="" /></div>
+            <div>
+              <p class="m-2 pb-2"><strong>32452 Likes</strong></p>
+              <p class="m-2 pb-3">
+                This is an example of a very good photo that you can post on
+                instagram.
+              </p>
+            </div>
+          </div>
+
+          <div
+            id="container"
+            class="m-auto mb-2 w-50 bg-white rounded border border-dark"
+          >
+            <div class="d-flex flex-row pt-4">
+              <div class="col-10">
+                <h4 class="ms-2 h1">The greatness of Croatia</h4>
+              </div>
+              <div class="col-2 ms-5">
+                <h6 class="pt-2 ms-5 font-weight-bold">4/9</h6>
+              </div>
+            </div>
+            <div><img class="w-100" src="pics/croatia.png" alt="" /></div>
+            <div>
+              <p class="m-2 pb-2"><strong>32452 Likes</strong></p>
+              <p class="m-2 pb-3">
+                This is an example of a very good photo that you can post on
+                instagram.
+              </p>
+            </div>
+          </div>
+
+          <div
+            id="container"
+            class="m-auto mb-2 w-50 bg-white rounded border border-dark"
+          >
+            <div class="d-flex flex-row pt-4">
+              <div class="col-10">
+                <h4 class="ms-2 h1">Amazing goal by Cristiano!</h4>
+              </div>
+              <div class="col-2 ms-5">
+                <h6 class="pt-2 ms-5 font-weight-bold">6/10</h6>
+              </div>
+            </div>
+            <div><img class="w-100" src="pics/cristiano2.PNG" alt="" /></div>
+            <div>
+              <p class="m-2 pb-2"><strong>32452 Likes</strong></p>
+              <p class="m-2 pb-3">
+                This is an example of a very good photo that you can post on
+                instagram.
+              </p>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
     </div>
+    <div class="tab-content" id="pills-tabContent"></div>
 
     <!-- Modal -->
     <div
@@ -327,7 +330,6 @@ Add the caption of your post here</textarea
         </div>
       </div>
     </div>
-
     <script src="https://unpkg.com/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
